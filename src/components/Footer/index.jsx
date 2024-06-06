@@ -1,5 +1,4 @@
 import logo from '../../images/LOGO_footer.svg';
-import '../../sass/footer.scss';
 
 function Footer() {
     return (

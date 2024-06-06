@@ -1,7 +1,9 @@
-function Banner() {
+function Banner(props) {
+    const page = props.page
+    const title = props.title
     return (
-        <div className="banner-block">
-            <p>Chez vous, partout et ailleurs</p>
+        <div className={`banner-block page-${page}`}>
+            <h1>{title}</h1>
         </div>
     )
 }

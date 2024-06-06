@@ -1,5 +1,4 @@
-import '../../sass/global.scss';
-import '../../sass/header.scss';
+import '../../sass/main.scss';
 import logo from '../../images/LOGO.svg';
 
 function Header() {
