@@ -39,6 +39,16 @@
             }
         }
     }
+    
+    .btn-open {
+        animation-name: rotateBtn;
+        animation-fill-mode: both;
+        animation-duration: 0.3s;
+        padding-left: 10px;
+        @media (min-width: 1024px) { 
+            padding-left: 15px;
+        }
+    }
 
     .collapse-description-block {
         width: 100%;
@@ -64,6 +74,18 @@
     }
 
     .description-show {
+        animation-name: show;
+        animation-duration: 0.3s;
         display: block;
     }
+}
+
+@keyframes show {
+    0%   {transform: translateY(-5px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes rotateBtn {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(-180deg);}
 }

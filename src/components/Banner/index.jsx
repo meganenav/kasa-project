@@ -3,7 +3,8 @@ function Banner(props) {
     const title = props.title
     return (
         <div className={`banner-block page-${page}`}>
-            <h1>{title}</h1>
+            {title ? <h1>{title}</h1> : ""}
+            
         </div>
     )
 }

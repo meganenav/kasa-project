@@ -1,3 +1,4 @@
+import { NavLink} from "react-router-dom"; 
 import '../../sass/main.scss';
 import logo from '../../images/LOGO.svg';
 
@@ -6,8 +7,8 @@ function Header() {
         <header>
             <img src={logo} alt="Logo" className="logo-header" />
             <nav>
-                <a href="/">Accueil</a>
-                <a href="/about">A propos</a>
+                <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>Accueil</NavLink>
+                <NavLink to="/about" className={({ isActive }) => isActive ? "active-link" : ""}>A propos</NavLink>
             </nav>
         </header>
     )
