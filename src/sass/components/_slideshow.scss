@@ -3,6 +3,7 @@
     align-items: center;
     position: relative;
     margin-bottom: 15px;
+
     @media (min-width: 1024px) { 
         margin-bottom: 30px;
     }
@@ -18,51 +19,50 @@
         }
     }
 
-        .directions {
-            display: flex;
-            position: absolute;
-            width: 100%;
-            justify-content: space-between;
-            
-            img {
-                height: 24px;
-                cursor: pointer;
-
-                @media (min-width: 1024px) { 
-                    height: 79px;
-                }
-            }
-
-            .arrow-left {
-                padding-left: 10px;
-
-                @media (min-width: 1024px) { 
-                    padding-left: 24px;
-                }
-            }
-
-            .arrow-right {
-                padding-right: 10px;
-
-                @media (min-width: 1024px) { 
-                    padding-right: 24px;
-                }
-            }
-        }
-
-        .pagination {
-            display: none;
+    .directions {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        justify-content: space-between;
+        
+        img {
+            height: 24px;
+            cursor: pointer;
 
             @media (min-width: 1024px) { 
-                display: flex;
-                font-size: 1.125em;
-                font-weight: 500;
-                color: white;
-                position: absolute;
-                bottom: 25px;
-                width: 100%;
-                justify-content: center;
+                height: 79px;
             }
         }
-    
+
+        .arrow-left {
+            padding-left: 10px;
+
+            @media (min-width: 1024px) { 
+                padding-left: 24px;
+            }
+        }
+
+        .arrow-right {
+            padding-right: 10px;
+
+            @media (min-width: 1024px) { 
+                padding-right: 24px;
+            }
+        }
+    }
+
+    .pagination {
+        display: none;
+
+        @media (min-width: 1024px) { 
+            display: flex;
+            font-size: 1.125em;
+            font-weight: 500;
+            color: white;
+            position: absolute;
+            bottom: 25px;
+            width: 100%;
+            justify-content: center;
+        }
+    }
 }

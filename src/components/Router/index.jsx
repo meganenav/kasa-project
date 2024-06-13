@@ -11,10 +11,10 @@ function Routing() {
         <Router>
             <Header />
             <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/accommodation/:id" element={<Accommodation />} />
-            <Route path="*" element={<Error />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/accommodation/:id" element={<Accommodation />} />
+                <Route path="*" element={<Error />} />
             </Routes>
         </Router>
     )

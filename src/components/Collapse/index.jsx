@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import arrowHide from '../../images/arrow_hide.svg';
+import React, { useState } from 'react'
+import arrowHide from '../../images/arrow_hide.svg'
 
 function Collapse(props) {
     const element = props.element
     const title = props.title
     const description = props.description
 
-    const [isActive, setIsActive] = useState(false);
+    const [isActive, setIsActive] = useState(false)
 
     return (
         <article className={`collapse collapse-${element}`}>

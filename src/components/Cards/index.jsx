@@ -1,17 +1,13 @@
-import { Link } from 'react-router-dom';
-import accommodations from '../../data/logements.json';
+import { Link } from 'react-router-dom'
 
-function Cards() {
-    const listItems = accommodations.map((accommodation, index) =>
-        <Link to={`/accommodation/${accommodation.id}`} key={index}>
+function Cards(props) {
+    return (
+        <Link to={`/accommodation/${props.id}`} key={props.index}>
             <article className="block-accommodation">
-                <img src={accommodation.cover} alt={accommodation.title}></img>
-                <p className="title-accommodation">{accommodation.title}</p>
+                <img src={props.cover} alt={props.title}></img>
+                <p className="title-accommodation">{props.title}</p>
             </article>
         </Link>
-    )
-    return (
-        <section className="container-accommodations">{listItems}</section>
     )
 }
 

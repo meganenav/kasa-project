@@ -1,11 +1,11 @@
-import { useParams, Navigate } from "react-router-dom";
-import accommodations from '../../data/logements.json';
+import { useParams, Navigate } from 'react-router-dom'
+import accommodations from '../../data/logements.json'
 import Collapse from '../../components/Collapse'
 import Rating from '../../components/Rating'
 import Slideshow from '../../components/Slideshow'
 
 function Accommodation() {
-    const { id } = useParams();
+    const { id } = useParams()
     const accommodationData = accommodations.filter(element =>
         element.id === id
     )
@@ -13,7 +13,7 @@ function Accommodation() {
         return <Navigate to="/404" />
     }
     const accommodation = accommodationData.map(data =>
-        <div key={data.id}>
+        <div className="container container-accommodation" key={data.id}>
             <Slideshow cover={data.cover} alt={data.title} pictures={data.pictures} />
             <section className="accommodation-informations">
                 <div className="accommodation-general">
@@ -42,9 +42,7 @@ function Accommodation() {
         </div>
     )
     return (
-        <div className="container container-accommodation">
-            {accommodation}
-        </div>
+        <>{accommodation}</>
     )
 }
  
