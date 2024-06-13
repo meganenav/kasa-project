@@ -1,15 +1,4 @@
 .container-accommodation {
-    .cover {
-        height: 100%;
-        width: 100%;
-        border-radius: 10px;
-
-        @media (min-width: 1024px) { 
-            height: 415px;
-            object-fit: cover;
-        }
-    }
-
     .accommodation-informations {
         margin-bottom: 10px;
         display: flex;
@@ -47,8 +36,9 @@
             column-gap: 10px;
     
             .tagElement {
-                width: 84px;
+                min-width: 84px;
                 height: 18px;
+                padding: 0 5px 0 5px;
                 font-size: 0.625em;
                 font-weight: 700;
                 color: white;
@@ -60,8 +50,9 @@
     
     
                 @media (min-width: 1024px) { 
-                    width: 115px;
+                    min-width: 115px;
                     height: 25px;
+                    padding: 0 5px 0 5px;
                     font-size: 0.875em;
                 }
             }
