@@ -1,5 +1,8 @@
 .container {
     margin: 27px 20px 27px 20px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
 
     @media (min-width: 1024px) { 
         margin: 50px 60px 50px 60px;

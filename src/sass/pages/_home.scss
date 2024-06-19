@@ -5,13 +5,17 @@
     margin-top: 22px;
 
     @media (min-width: 1024px) { 
-        background-color: #F6F6F6;
+        background-color: $light-grey;
         padding: 50px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
         row-gap: 60px;
         border-radius: 25px;
+    }
+
+    @media (min-width: 1300px) { 
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .block-accommodation {

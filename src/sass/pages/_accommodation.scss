@@ -25,6 +25,7 @@
         .location {
             font-size: 0.875em;
             font-weight: 500;
+            margin: 0;
     
             @media (min-width: 1024px) { 
                 font-size: 1.125em;
@@ -35,6 +36,11 @@
             display: flex;
             flex-direction: row;
             column-gap: 10px;
+            margin: 10px 0 10px 0;
+
+            @media (min-width: 1024px) { 
+                margin: 20px 0 20px 0;
+            }
     
             .tagElement {
                 min-width: 84px;
@@ -135,15 +141,21 @@
 
             ul {
                 margin: 0;
-                padding: 10px 20px 5px 20px;
+                padding: 10px 20px 10px 20px;
                 
                 @media (min-width: 1024px) {
-                    padding: 15px 25px 10px 25px;
+                    padding: 15px 25px 15px 25px;
                 }
 
                 li {
                     list-style-type: none;
-                    padding: 5px 0 5px 0;
+                    font-size: 0.75em;
+                    font-weight: 500;
+
+                    @media (min-width: 1024px) {
+                        font-size: 1em;
+                        padding: 2px 0 2px 0;
+                    }
                 }
             }
         }

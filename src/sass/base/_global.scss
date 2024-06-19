@@ -7,4 +7,10 @@ body {
         text-decoration: none;
         color: black;
     }
+
+    #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 }
