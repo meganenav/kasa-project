@@ -12,9 +12,9 @@ function Collapse(props) {
         <article className={`collapse collapse-${element}`}>
             <div className="collapse-title-block">
                 <p>{title}</p>
-                 <img src={ arrowHide } className={ isActive ? "btn-open" : "btn-closed" } alt="Flèche pour gérer l'accordéon" onClick={() => setIsActive(!isActive)}></img>
+                 <img src={ arrowHide } className="arrow" alt="Flèche pour gérer l'accordéon" onClick={() => setIsActive(!isActive)}></img>
             </div>
-            <div className={isActive ? "collapse-description-block description-show" : "collapse-description-block description-hidden"}>
+            <div className={isActive ? "collapse-description-block description-show" : "collapse-description-block"}>
                 {description}
             </div>
         </article>
